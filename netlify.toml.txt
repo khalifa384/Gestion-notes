@@ -1,0 +1,13 @@
+[build]
+  publish = "/"
+  command = "echo 'Build complete'"
+
+[[redirects]]
+  from = "/*"
+  to = "/gestion_notes.html"
+  status = 200
+
+[headers]
+  [[headers.values]]
+    key = "Cache-Control"
+    value = "public, max-age=3600"
