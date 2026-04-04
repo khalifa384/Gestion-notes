@@ -1016,7 +1016,7 @@
 
                 const row = document.createElement('tr');
                 row.innerHTML = `
-                    <td><input type="text" placeholder="Entrez le nom" value="${eleve.nom}" onchange="changerNom(${eleve.id}, this.value)"></td>
+                    <td><input type="text" placeholder="Nom de l´élève svp" value="${eleve.nom}" onchange="changerNom(${eleve.id}, this.value)"></td>
                     <td><input type="number" step="0.5" min="0" max="${notesMax.lc_r}" value="${eleve.lc_r}" onchange="mettreAJour(${eleve.id}, 'lc_r', this.value)"></td>
                     <td><input type="number" step="0.5" min="0" max="${notesMax.lc_c}" value="${eleve.lc_c}" onchange="mettreAJour(${eleve.id}, 'lc_c', this.value)"></td>
                     <td><input type="number" step="0.5" min="0" max="${notesMax.maths_r}" value="${eleve.maths_r}" onchange="mettreAJour(${eleve.id}, 'maths_r', this.value)"></td>
